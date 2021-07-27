@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+header{
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  font-size: 30px;
+  font-weight: 600;
+  bottom: 290%;
+  right: 150px;
+}
+body{
+  background-color: green;
+  margin: 0;
+  padding: 0;
+}
+.panda{
+  position: absolute;
+  top: 40%;
+  left: 43%;
+  height: 120px;
+  width: 80px;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 40%;
+}
+.face{
+  position: relative;
+  background-color: white;
+  border: 5px solid black;
+  height: 90px;
+  width: 110px;
+  border-radius: 50%;
+  bottom: 30px;
+  right: 20px;
+  
+}
+.ear-left, .ear-right{
+  position: relative;
+  background-color: black;
+  height: 25px;
+  width: 40px;
+  border-radius: 0 0 40px 40px;
+}
+.ear-left{
+  transform: rotate(145deg);
+  bottom: 13px;
+  right: 8.3px;
+}
+.ear-right{
+  transform: rotate(-145deg);
+  left: 78px;
+  bottom: 38px;
+} 
+.eye-left, .eye-right{
+  position: relative;
+  width: 28px;
+  height: 33px;
+  background-color: black;
+  border-radius: 50%;
+}
+.eye-right{
+  bottom: 63px;
+  left: 72px;
+  transform: rotate(-25deg);
+}
+.eye-left{
+  bottom: 30px;
+  left: 10px;
+  transform: rotate(25deg);
+}
+.eyeball{
+  position: relative;
+  background-color: white;
+  top: 8px;
+  width: 14px;
+  left: 7px;
+  height: 14px;
+  border-radius: 50%;
+}
+.nose{
+  position: relative;
+  height: 8px;
+  width: 15px;
+  background-color: black;
+  border-radius: 15px;
+  bottom: 65px;
+  left: 48px;
+}
+.smile{
+  position: relative;
+  height: 7px;
+  width: 40px;
+  background-color: black;
+  bottom: 50px;
+  left: 35px;
+  border-bottom: 20px;
+  z-index: 0;
+  border-radius: 50%/7px 7px 0 0;
+  transform: rotateZ(180deg);
+}
+.hand-left,.hand-right{
+  position: relative;
+  width: 25px;
+  height: 43px;
+  background-color: black;
+  border-radius: 30px;
+}
+.hand-left{
+  transform: rotate(90deg);
+  bottom: 28px;
+  right: 12px;
+  animation: wave 3s infinite;
+  transform-origin: top;
+}
+ 
+ 
+@keyframes wave{
+  50%{
+    transform: rotate(120deg);
+  }
+}
+.hand-right{
+  transform: rotate(-90deg);
+   bottom: 92px;
+  left: 88px;
+}
+.leg-left,.leg-right{
+  position: relative;
+  background-color: black;
+  width: 17px;
+  height: 25px;
+  border-radius: 0 0 30px 30px;
+}
+.leg-left{
+   bottom: 65px;
+  left: 15px;
+}
+.leg-right{
+  bottom: 90px;
+  left: 49px;
+}
+.shadow{
+  position: relative;
+  background-color: rgba(0,0,0,2);
+  height: 30px;
+  width: 100px;
+  border-radius: 50%;
+  bottom: 100px;
+  right: 10px;
+  opacity: 1;
+}
